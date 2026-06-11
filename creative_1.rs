@@ -25,3 +25,15 @@ fn main(){
     println!("Message is {:?}" , msg.0) ;     
 }
 ___________________________________________________________________________________________________________________________________________________________
+#[derive(Debug)]
+struct Message(String) ; 
+impl Message{
+    fn print_message(data : &Message){
+        println!("Message is {:?}" , data.0) ;
+    }
+}
+fn main(){
+    let msg : Message = Message(String::from("Sohee Al Mahdi Dibbo !")) ; 
+    Message::print_message(&msg) ;
+}
+__________________________________________________________________________________________________________________________________________________________
